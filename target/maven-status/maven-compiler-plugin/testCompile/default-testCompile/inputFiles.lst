@@ -1,0 +1,14 @@
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/pages/DashboardPage.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/step_definitions/DashboardPageMenusStepDefs.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/step_definitions/Hooks.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/pages/BasePage.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/pages/ProfilePage.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/step_definitions/LoginStepDefs.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/step_definitions/NavigationMenuStepDefs.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/pages/DevelopersPage.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/utilities/Driver.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/utilities/BrowserUtils.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/runners/CukesRunner.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/utilities/ConfigurationReader.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/runners/FailedTestRunner.java
+/Users/erhanilgar/IdeaProjects/seleniumProject/src/main/MotorolaCucumber/src/test/java/com/eurotechStudy/pages/LoginPage.java
