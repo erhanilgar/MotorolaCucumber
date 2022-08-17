@@ -12,7 +12,7 @@ Feature: DashboardPage Menus
       | All Posts  |
       | My Account |
 
-  @wip
+  @123
   Scenario: User should be able to see the Dashboard menus after logged in as a student
 
     When the user logs in using "zehra@gmail.com" and "12345#"

@@ -14,7 +14,7 @@ Feature: Navigate to menu with Parameters
     Then the user should be able to login
     And the user navigates to "All Posts" menu
     Then the user should be able to see header as "Posts"
-
+@123
   Scenario: User navigate to menu
     Given the user is on the login page
     When the user logs in using "eurotech@gmail.com" and "Test12345!"
@@ -23,7 +23,7 @@ Feature: Navigate to menu with Parameters
     Then the user should be able to see header as "Dashboard"
 
 
-  @navigate
+  @123
   Scenario Outline: User navigate to menu outline "<userType>"
     Given the user is on the login page
     When the user logs in using "<userTYpe>" and "<password>"
