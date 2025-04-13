@@ -17,16 +17,10 @@ Feature: Teachers should be able to Navigate to Menus
     Then the user navigates to All Posts menu
     And the user should be able to see the header of the menu
 
+    # Hello world
   @db
   Scenario: Navigating to My Account menu
 
     And the user sees welcome text
     Then the user navigates to My Account menu
-    And the user should be able to see the header of the menu
-
-  @db123
-  Scenario: Navigating to My Account menu hello
-
-    And the user sees welcome text hello
-    Then the user navigates to My Account menu hello
     And the user should be able to see the header of the menu
