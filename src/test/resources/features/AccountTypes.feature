@@ -66,3 +66,11 @@ Feature: Account Types
       | Instructor or Teacher        |
       | Intern                       |
       | Other                        |
+
+    Scenario Outline: Different User Type
+
+
+      Examples:
+        |  |
+
+

@@ -48,17 +48,17 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@123", ] ,
+        labels:  [ "@12345", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00, ] 
+                data:  [ 66.67, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00, ] 
+                data:  [ 33.33, ] 
             },
             {
                 label: "Skipped",
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>02 Jun 2022, 12:34</td>
+      <td>17 Aug 2022, 21:12</td>
     </tr>
   </tbody>
 </table>
@@ -195,54 +195,54 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-tag_2149438961.html">@123</a></td>
+        <td class="tagname"><a href="report-tag_4026542066.html">@12345</a></td>
 
-        <td      class="passed"    >28</td>
+        <td      class="passed"    >2</td>
+        <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td class="total">28</td>
+        <td class="total">3</td>
 
-        <td  class="passed"    >7</td>
         <td >0</td>
-        <td class="total">7</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
 
-        <td class="duration" data-value="49800337000">49.800</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="21580479000">21.580</td>
+        <td class="failed">Failed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>28</td>
+      <td>2</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>28</td>
+      <td>3</td>
 
-      <td>7</td>
       <td>0</td>
-      <td>7</td>
+      <td>1</td>
+      <td>1</td>
 
-      <td class="duration">49.800</td>
+      <td class="duration">21.580</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
+      <td>66.67%</td>
+      <td>33.33%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
       <td>0.00%</td>
-      <td></td>
-      <td></td>
       <td>100.00%</td>
+      <td></td>
+      <td></td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

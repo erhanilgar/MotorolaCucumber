@@ -8,6 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import java.net.MalformedURLException;
 import java.util.List;
 import java.util.Map;
 
@@ -15,7 +16,7 @@ public class DashboardPageMenusStepDefs {
 
 
     @Then("the user should be able to see following menus")
-    public void the_user_should_be_able_to_see_following_menus(List<String> menuOptions) {
+    public void the_user_should_be_able_to_see_following_menus(List<String> menuOptions) throws MalformedURLException {
 
         System.out.println("menuOptions.size() = " + menuOptions.size());
 
@@ -27,7 +28,7 @@ public class DashboardPageMenusStepDefs {
     }
 
     @When("the user logs in using following credentials")
-    public void the_user_logs_in_using_following_credentials(Map<String, String > userCredential) {
+    public void the_user_logs_in_using_following_credentials(Map<String, String > userCredential) throws MalformedURLException {
 
         System.out.println("userCredential = " + userCredential);
         new LoginPage().login(userCredential.get("username"), userCredential.get("password"));

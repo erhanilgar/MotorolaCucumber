@@ -7,10 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.net.MalformedURLException;
+
 
 public abstract class BasePage {
 
-    public BasePage() {
+    public BasePage() throws MalformedURLException {
 
         PageFactory.initElements(Driver.get(), this);
         //bu sayfada bulunan element ve methodlari kullanmama izin veriyor.
@@ -35,7 +37,7 @@ public abstract class BasePage {
     public WebElement understandBtn;
 
 
-    public void navigateToMenu(String menuName) {
+    public void navigateToMenu(String menuName) throws MalformedURLException {
 
         WebElement menu =   Driver.get().findElement(By.xpath("//a[text()='" + menuName + "']"));
 

@@ -9,6 +9,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import java.net.MalformedURLException;
+
 public class NavigationMenuStepDefs {
 
     @Given("the user sees welcome text")
@@ -18,14 +20,14 @@ public class NavigationMenuStepDefs {
     }
 
     @When("the user navigates to Developers menu")
-    public void the_user_navigates_to_Developers_menu() {
+    public void the_user_navigates_to_Developers_menu() throws MalformedURLException {
 
         new DashboardPage().developers.click();
 
     }
 
     @Then("the user should be able to see the header of the menu")
-    public void the_user_should_be_able_to_see_the_header_of_the_menu() {
+    public void the_user_should_be_able_to_see_the_header_of_the_menu() throws MalformedURLException {
 
         String expectedText="Filter Profiles by Skill or by Location";
       //  BrowserUtils.verifyElementDisplayed(new DevelopersPage().developersHead);
@@ -48,13 +50,13 @@ public class NavigationMenuStepDefs {
     }
 
     @And("the user navigates to {string} menu")
-    public void theUserNavigatesToMenu(String menuType) {
+    public void theUserNavigatesToMenu(String menuType) throws MalformedURLException {
         BrowserUtils.waitFor(2);
         new DevelopersPage().navigateToMenu(menuType);
     }
 
     @Then("the user should be able to see header as {string}")
-    public void theUserShouldBeAbleToSeeHeaderAs(String headerText) {
+    public void theUserShouldBeAbleToSeeHeaderAs(String headerText) throws MalformedURLException {
 
         BrowserUtils.waitFor(2);
         String actualText=new DevelopersPage().getHeadText(headerText);

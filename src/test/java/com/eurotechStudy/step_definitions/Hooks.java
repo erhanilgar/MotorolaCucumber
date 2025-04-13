@@ -7,6 +7,7 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
@@ -14,7 +15,7 @@ public class Hooks {
 
 
     @Before
-    public void setup() {
+    public void setup() throws MalformedURLException {
 
         System.out.println("--- This Statement comes from BEFORE ---");
         Driver.get().manage().window().maximize();
@@ -23,7 +24,7 @@ public class Hooks {
     }
 
     @After
-    public void tearDown(Scenario scenario) {
+    public void tearDown(Scenario scenario) throws MalformedURLException {
 
         if (scenario.isFailed()) {
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);

@@ -1,5 +1,8 @@
 package com.eurotechStudy.utilities;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +13,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -24,7 +29,7 @@ public class Driver {
     // for each thread, in InheritableThreadLocal we can have separate object for that thread
     // driver class will provide separate webdriver object per thread
     private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
-    public static WebDriver get(){
+    public static WebDriver get() throws MalformedURLException {
         //if this thread doesn't have driver - create it and add to pool
         if (driverPool.get() == null) {
 //            if we pass the driver from terminal then use that one
@@ -73,6 +78,15 @@ public class Driver {
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
+                case "mobile chrome":
+                    DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+
+                    desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
+                    desiredCapabilities.setCapability(MobileCapabilityType.VERSION, "12.0");
+                    desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_2");
+                    desiredCapabilities.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
+                    driverPool.set(new RemoteWebDriver(new URL("http://localhost:4723/wd/hub"),desiredCapabilities));
+
             }
         }
         return driverPool.get();
