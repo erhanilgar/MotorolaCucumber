@@ -13,8 +13,8 @@ Feature: Teachers should be able to Navigate to Menus
 
   Scenario: Navigating to All Posts menu
 
-    And the user sees welcome text
-    Then the user navigates to All Posts menu
+    And the user sees
+    Then the user navigates to All
     And the user should be able to see the header of the menu
 
     # Hello world
